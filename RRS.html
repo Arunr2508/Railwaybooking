@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Railway Reservation System</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #116466;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #14a76c;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+ height: 100px;
+  background-color: #14a76c;
+  padding: 0.75px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 25%;
+  height:825px;
+  font-style: italic;
+  font-size: 15px; 
+  color:white;
+  background: #272727;
+  padding: 30px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  
+  list-style-type: none;
+  padding: 0;
+}
+
+
+article {
+  float: left;
+  padding: 0px;
+  width: 75%;
+  background-image: url('train2.jpg');
+   background-size: 100% 100%;
+  background-color: #f1f1f1;
+  height:475px; 
+}
+.center {
+  margin: auto;
+  width: 100%;
+  height:400px;
+  padding: 120px;
+  font-style: italic;
+  font-size: 40px;
+}
+#rcorners1 {
+  text-align: center;
+  border-radius: 25px;
+  background: #14a76c;
+  margin-left: 50px;
+  margin-right:60px;
+  margin-top:25px;
+  padding: 20px; 
+  width: 250px;
+  height: 250px;  
+}
+#rcorners2 {
+  text-align: center;
+  border-radius: 25px;
+  background: #14a76c;
+  margin-left: 50px;
+  margin-right:60px;
+  margin-top:25px;
+  padding: 20px; 
+  width: 250px;
+  height: 250px;  
+}
+#rcorners3 {
+  text-align: center;
+  border-radius: 25px;
+  background: #14a76c;
+  margin-left: 50px;
+  margin-right:60px;
+  margin-top:25px;
+  padding: 20px; 
+  width: 250px;
+  height: 250px;
+ }
+ #rcorners4 {
+   text-align: center;
+  font-size: 30px;
+  color: white;
+ }
+ .column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+ul {
+  height: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 50;
+  overflow: hidden;
+  background-color: #116466;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 35px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #272727;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Railway Reservation System</h2>
+</header>
+
+<section>
+  <nav>
+  
+  
+  <div style="font-size:200%;">Book Your</div>
+  <br>
+ 
+  
+  <br>
+  <div style="font-size:200%;">Tickets Here</div>
+  <br>
+  
+  
+ <br>
+  <br>
+  <div>
+  <form action="/action_page.php">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="From">
+<br><br>
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="To">
+ <label for="Date"></label>
+ <br><br>
+  <input type="date" id="date2" name="date2">
+  <br><br>
+<br>
+    <label for="country"></label>
+    <select id="country" name="country">
+    <option value="All">All Classes</option>
+      <option value="First">First</option>
+      <option value="Premeium">Premeium</option>
+      <option value="Economy">Economy</option>
+    </select>
+  <br><br>
+  <br>
+  <br><br>
+    <input type="submit" value="Find Trains">
+  </form>
+</div>
+    
+  </nav>
+  
+ 
+  
+
+  <article>
+  
+  
+  
+  
+ <ul>
+  
+  <li ><a href="#home">Home</a></li>
+  <li><a href="#Meals">Meals</a></li>
+  <li><a href="Holiday">Holiday Packages</a></li>
+  <li><a href="SVC">Service At Station</a></li>
+  <li><a href="#about">Contact Us</a></li>
+</ul>
+ <div class="center">
+  <h1 style="color:white;">Indian </h1>
+   <h2 style="color:white;">Railways </h2>
+</div>
+<div style="background-color:#116466;">
+
+     
+     
+
+    
+<div class="row">
+<p id="rcorners4"> Holidays</p>
+  <div class="column">
+ <p id="rcorners1">Tourist Travels <br><br> Expedia
+<br><br>Goibibo
+<br><br>SOTC Travel Limited
+<br><br>Yatra Online Pvt Ltd
+</p>
+</div>
+
+ <div class="column">
+ <p id="rcorners2">International Packages
+  <br><br> Paris 5 Days/4 Nights
+
+<br><br>London 4 Days/3 Nights
+
+<br><br> Hong Kong 6 Days/5 Nights
+
+ <br><br>Maldives 3 Days/1 Nights</p>
+</div>
+<div class="column"> 
+
+ <p id="rcorners3">National Packages <br><br> Goa 5 Days/4 Nights
+
+<br><br> Manali 3 Days/2 Nights
+
+<br><br> Munnar 4 Days/3 Nights
+
+<br><br> Darjeeling 2 Days/1 Nights </p>
+ 
+</div>
+</div>
+  
+  
+  </article>
+</section>
+
+
+</body>
+</html>
